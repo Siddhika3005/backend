@@ -462,11 +462,28 @@ backend/
 - ✅ Error handling
 - ✅ All CRUD operations
 
+### HTTP Learning
+- ✅ Complete HTTP request/response cycle
+- ✅ GET and POST request handling
+- ✅ Streaming request bodies
+- ✅ JSON parsing and validation
+- ✅ Data persistence
+- ✅ Verbose logging for debugging
+- ✅ Real-world testing with curl/PowerShell
+
 ### Todos Server (Progressive)
 - ✅ Every concept from Notes Server
 - ✅ BUT learned deeply, one route at a time
 - ✅ Forces understanding, not copying
 - ✅ Builds debugging skills
+
+### Calculator Server (Express Framework)
+- ✅ Express.js framework basics
+- ✅ Query parameter parsing
+- ✅ DRY (Don't Repeat Yourself) principles
+- ✅ Helper functions and code refactoring
+- ✅ Arrow functions and functional programming
+- ✅ Framework advantages over vanilla Node.js
 
 ---
 
@@ -478,23 +495,32 @@ Begin with `todo-app` to understand basic file operations.
 ### 2. Build Complete API
 Use `notes-server` to see a fully-working REST API example.
 
-### 3. Learn Deliberately
+### 3. Deep Dive into HTTP
+Use `http-learning` to understand every detail of the HTTP protocol with verbose logging.
+
+### 4. Learn Deliberately
 Use `todos-server` to build one route at a time, understanding each piece.
 
-### 4. Test Everything
+### 5. Explore Frameworks
+Use `calculator-server` to see how Express.js simplifies backend development.
+
+### 6. Test Everything
 Always test with curl or PowerShell before moving on.
 
-### 5. Don't Skip Steps
+### 7. Don't Skip Steps
 Each project teaches different lessons. Do them in order.
 
-### 6. Modify & Experiment
+### 8. Modify & Experiment
 - Try different data
 - Add console logs
 - Break things intentionally
 - Fix them
 
-### 7. Compare with Frameworks
+### 9. Compare with Frameworks
 After understanding these fundamentals, try Express.js. You'll see how much it abstracts!
+
+### 10. Build More Projects
+Once you master these 5, create your own projects combining what you've learned.
 
 ---
 
@@ -512,12 +538,26 @@ After understanding these fundamentals, try Express.js. You'll see how much it a
 - How requests flow through servers
 - Why frameworks exist
 
+**After HTTP Learning:**
+- Complete HTTP protocol details
+- Request/response cycles in depth
+- Stream-based data handling
+- Real-world testing techniques
+- Debugging strategies
+
 **After Todos Server:**
 - Deep understanding of routing
 - Debugging complex async code
 - Decision-making in design
 - Why patterns matter
 - Professional backend thinking
+
+**After Calculator Server:**
+- How frameworks abstract complexity
+- Express.js routing patterns
+- Query parameter handling
+- Code organization with helpers
+- When to use frameworks vs. vanilla Node.js
 
 ---
 
@@ -551,22 +591,29 @@ Make sure both the server is still running in its terminal.
 
 ## 🎯 Project Summary
 
-| Project | Purpose | Duration | Port | Outcome |
-|---------|---------|----------|------|---------|
-| **Todo App** | Learn file I/O | 15 min | N/A | Understand data persistence |
-| **Notes Server** | Build complete API | 30 min | 3000 | See full REST example |
-| **HTTP Learning** | Master HTTP | 45 min | 3002 | Deep HTTP understanding |
-| **Todos Server** | Deep learning | 1+ hours | 3001 | Master fundamentals |
+| Project | Purpose | Duration | Port | Framework | Outcome |
+|---------|---------|----------|------|-----------|---------|
+| **Todo App** | Learn file I/O | 15 min | N/A | None | Understand data persistence |
+| **Notes Server** | Build complete API | 30 min | 3000 | Vanilla HTTP | See full REST example |
+| **HTTP Learning** | Master HTTP protocol | 45 min | 3002 | Vanilla HTTP | Deep HTTP understanding |
+| **Todos Server** | Deep learning | 1+ hours | 3001 | Vanilla HTTP | Master fundamentals |
+| **Calculator Server** | Learn frameworks | 20 min | 3000 | Express.js | See framework benefits |
 
 ---
 
 ## � Conclusion
 
-These four projects together create a **complete learning path** from basic file operations to professional REST API design and HTTP mastery.
+These **five projects** together create a **complete learning path** from basic file operations to professional REST API design, HTTP mastery, and framework understanding.
 
 **The real skill:** Understanding that all of this is **just JavaScript + HTTP + File I/O**. No magic. Just fundamentals.
 
-By the end, you won't just know how to build backends—you'll understand **why** they're built this way.
+By the end, you won't just know how to build backends—you'll understand **why** they're built this way, and you'll see how frameworks like Express simplify the process.
+
+**Progression:**
+1. File operations (Todo App)
+2. HTTP from scratch (Notes Server + HTTP Learning)
+3. Deliberate learning (Todos Server)
+4. Framework understanding (Calculator Server)
 
 ---
 
@@ -684,5 +731,5 @@ If you have questions about these projects:
 
 ---
 
-**Last Updated:** March 13, 2026  
-**Status:** All projects complete and tested ✅
+**Last Updated:** March 31, 2026  
+**Status:** All 5 projects complete and tested ✅
