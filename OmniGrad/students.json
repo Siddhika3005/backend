@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name": "Siddhika Singh",
+    "course": "BTech",
+    "email": "singhsiddhika00@gmail.com",
+    "id": 1774935109735
+  },
+  {
+    "name": "Riddhi Singh",
+    "course": "BSC",
+    "email": "riddhi.singh@gmail.com",
+    "id": 1774935148437
+  }
+]
