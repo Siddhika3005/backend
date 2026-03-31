@@ -2,6 +2,8 @@
 
 A comprehensive collection of **educational Node.js projects** that progressively teach core backend development concepts—from simple CLI apps to full HTTP REST APIs with detailed logging and testing.
 
+**Last Updated:** March 31, 2026
+
 > **Philosophy:** Build from fundamentals. No frameworks. No magic. Just pure JavaScript + HTTP + File I/O.
 
 ---
