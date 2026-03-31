@@ -330,6 +330,16 @@ Invoke-WebRequest -Uri http://localhost:3000/subtract?a=20&b=8 -UseBasicParsing 
 - Debug effectively
 - Learn foundations that frameworks hide
 
+### Skill Level: Intermediate to Advanced
+
+**Project 5: Calculator Server** (Express.js)
+- See how frameworks simplify development
+- Understand routing in Express
+- Learn query parameter handling
+- Compare vanilla Node.js vs. frameworks
+- Refactor code for maintainability
+- Preparation for real-world frameworks
+
 ---
 
 ## 🔄 Comparison: How They Differ
