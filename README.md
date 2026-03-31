@@ -27,6 +27,7 @@ backend/
 ├── notes-server/             # Complete REST API (Full-Featured)
 ├── todos-server/             # REST API (Step-by-Step Learning)
 ├── http-learning/            # HTTP Fundamentals (GET + POST)
+├── calculator-server/        # REST API with Express (Arithmetic Operations)
 └── README.md                 # This file
 ```
 
@@ -232,6 +233,69 @@ Invoke-WebRequest -Uri http://localhost:3002/items `
 
 ---
 
+## 💻 Project 5: Calculator Server (Express Framework)
+
+**Location:** `backend/calculator-server/`
+
+**What It Is:** A lightweight REST API for arithmetic operations built with Express.js
+
+**Learning Focus:**
+- Express.js framework basics
+- Query parameters in routes
+- Framework advantages over vanilla Node.js
+- RESTful API simplification
+- Code organization with helper functions
+
+**Usage:**
+```bash
+cd backend/calculator-server
+npm install
+node index.js
+# Server runs on http://localhost:3000
+```
+
+**Features:**
+- ✅ GET /sum?a=5&b=3 - Add two numbers
+- ✅ GET /multiply?a=5&b=3 - Multiply two numbers
+- ✅ GET /divide?a=6&b=2 - Divide two numbers
+- ✅ GET /subtract?a=5&b=3 - Subtract two numbers
+- ✅ Clean, refactored code with DRY principles
+
+**Key Concepts:**
+- Express.js routing (`app.get()`)
+- Query parameters parsing
+- Arrow functions and helper functions
+- Code refactoring (DRY principle)
+- JSON responses
+- Functional programming patterns
+
+**Files:**
+- `index.js` - Express server with all arithmetic routes
+- `package.json` - Project dependencies (Express)
+- `.gitignore` - Excludes node_modules from git
+- `README.md` - Complete API documentation
+
+**Test Examples:**
+```powershell
+# Sum: 5 + 3 = 8
+Invoke-WebRequest -Uri http://localhost:3000/sum?a=5&b=3 -UseBasicParsing | Select-Object -ExpandProperty Content
+# Returns: {"ans":8}
+
+# Multiply: 4 * 7 = 28
+Invoke-WebRequest -Uri http://localhost:3000/multiply?a=4&b=7 -UseBasicParsing | Select-Object -ExpandProperty Content
+# Returns: {"ans":28}
+
+# Divide: 10 / 2 = 5
+Invoke-WebRequest -Uri http://localhost:3000/divide?a=10&b=2 -UseBasicParsing | Select-Object -ExpandProperty Content
+# Returns: {"ans":5}
+
+# Subtract: 20 - 8 = 12
+Invoke-WebRequest -Uri http://localhost:3000/subtract?a=20&b=8 -UseBasicParsing | Select-Object -ExpandProperty Content
+# Returns: {"ans":12}
+```
+
+---
+
 ## 🎯 Learning Progression
 
 ### Skill Level: Beginner
@@ -268,15 +332,16 @@ Invoke-WebRequest -Uri http://localhost:3002/items `
 
 ## 🔄 Comparison: How They Differ
 
-| Feature | Todo App | Notes Server | HTTP Learning | Todos Server |
-|---------|----------|--------------|---------------|--------------|
-| **Interface** | Command-line | HTTP REST API | HTTP REST API | HTTP REST API |
-| **Port** | N/A | 3000 | 3002 | 3001 |
-| **Routes** | N/A | 6 | 3 | 1 (currently) |
-| **Logging** | ❌ None | ❌ Minimal | ✅ Verbose | ✅ Detailed |
-| **Speed** | ⚡ Fast to learn | ✓ Complete | 🎓 Practical | 🎓 Deliberate |
-| **Learning** | File I/O basics | Full API design | HTTP deep dive | One step at a time |
-| **When to Use** | Quick scripts | Production-like | Understanding | Deep learning |
+| Feature | Todo App | Notes Server | HTTP Learning | Todos Server | Calculator |
+|---------|----------|--------------|---------------|--------------|-----------|
+| **Interface** | Command-line | HTTP REST API | HTTP REST API | HTTP REST API | HTTP REST API |
+| **Port** | N/A | 3000 | 3002 | 3001 | 3000 |
+| **Routes** | N/A | 6 | 3 | 1 (currently) | 4 |
+| **Framework** | None | Vanilla HTTP | Vanilla HTTP | Vanilla HTTP | Express.js |
+| **Logging** | ❌ None | ❌ Minimal | ✅ Verbose | ✅ Detailed | ✅ Startup message |
+| **Speed** | ⚡ Fast to learn | ✓ Complete | 🎓 Practical | 🎓 Deliberate | ⚡ Simple |
+| **Learning** | File I/O basics | Full API design | HTTP deep dive | One step at a time | Framework intro |
+| **When to Use** | Quick scripts | Production-like | Understanding | Deep learning | Framework practice |
 
 ---
 
@@ -316,8 +381,18 @@ cd backend/todos-server
 node server.js
 ```
 
-**Terminal 4 - Test Commands:**
+**Terminal 4 - Calculator Server (Express):**
+```bash
+cd backend/calculator-server
+npm install
+node index.js
+```
+
+**Terminal 5 - Test Commands:**
 ```powershell
+# Test calculator-server
+Invoke-WebRequest -Uri http://localhost:3000/sum?a=10&b=5 -UseBasicParsing | Select-Object -ExpandProperty Content
+
 # Test http-learning (recommended to start here!)
 Invoke-WebRequest -Uri http://localhost:3002/items -UseBasicParsing | Select-Object -ExpandProperty Content
 
@@ -347,10 +422,23 @@ backend/
 │   ├── notes.json                     # Data storage
 │   └── README.md                      # API documentation
 │
-└── todos-server/                      # Step-by-Step REST API
-    ├── server.js                      # HTTP server (1 route)
-    ├── todos.json                     # Data storage
-    └── README.md                      # Learning guide
+├── todos-server/                      # Step-by-Step REST API
+│   ├── server.js                      # HTTP server (1 route)
+│   ├── todos.json                     # Data storage
+│   └── README.md                      # Learning guide
+│
+├── http-learning/                     # HTTP Fundamentals
+│   ├── server.js                      # HTTP server with logging
+│   ├── data.json                      # Data storage
+│   └── README.md                      # Complete guide with curl
+│
+└── calculator-server/                 # Express.js Arithmetic API
+    ├── index.js                       # Express server
+    ├── package.json                   # Dependencies (Express)
+    ├── package-lock.json              # Locked versions
+    ├── .gitignore                     # Ignore node_modules
+    ├── node_modules/                  # Dependencies directory
+    └── README.md                      # API documentation
 ```
 
 ---
