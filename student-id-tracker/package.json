@@ -1,0 +1,13 @@
+{
+  "name": "student-id-tracker",
+  "version": "1.0.0",
+  "description": "A full-stack student management application with HTML, CSS, JavaScript frontend and Node.js backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["student", "tracker", "api", "crud"],
+  "author": "",
+  "license": "ISC"
+}
